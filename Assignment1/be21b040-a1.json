@@ -1,0 +1,17 @@
+{
+	"rollnumber": "be21b040",
+	"name": "Sumedh Sanjay Kangne",
+	"machineid": "bcc865994e3840f1b4c126c08b4a1e3d",
+	"ram": 15667,
+	"graphicscard": "NVIDIA GeForce RTX 3050 Laptop GPU",
+	"cpumodels": "AMD Ryzen 7 5800H",
+	"cpucores": 8,
+	"cachesize": 16384,
+	"cpumhz": 3194,
+	"tdp": 45,
+	"lithiography": 7,
+	"wirednetwork": "Ethernet Interface; 82540EM Gigabit Ethernet Controller by Intel Corporation",
+	"wirelessnetwork": "RTL8852AE WiFi 6 802.11ax PCIe Adapter",
+	"opencl": "OpenCL 3.0 supported for NVIDIA Ampere architechture",
+	"nthreads": 16
+}
