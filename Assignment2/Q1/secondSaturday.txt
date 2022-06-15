@@ -1,0 +1,31 @@
+#!/usr/bin/bash
+#
+#Script by Sumedh Kangne, BE21B040
+#
+#Usage:
+#chmod 755 secondSaturday.txt
+#./be21b040.txt <Year>
+#
+#
+#
+month=(04 05 06 07 08 09 10 11 12 01 02 03)
+days=(01 02 03 04 05 06 07 08 09 10 11 12 13 14)
+#
+#only taking till 14 as it is the max possible value for a second saturday
+#
+newYear=$(($1+1))
+
+for i in  ${month[@]}
+do
+	if [ "$i" -eq "01" ] || [ "$i" -eq "02" ] || [ "$i" -eq "03" ]
+	then
+		val=$(ncal $i $newYear | awk '{ if( $1 ~ /Sa/ ){ print $3 } }')
+		#
+		#using awk to pattern match with Sa and then print the 3rd field(2nd Saturday)
+		#
+		echo "${days[$(($val-1))]}/$i/$newYear"
+	else
+		val=$(ncal $i $1 | awk '{ if( $1 ~ /Sa/ ){ print $3 } }')
+		echo "${days[$(($val-1))]}/$i/$1"
+	fi
+done
