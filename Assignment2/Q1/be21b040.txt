@@ -3,7 +3,7 @@
 #Script by Sumedh Kangne, BE21B040
 #
 #usage:
-#chmod 755 be21b040.txt
+#chmod 755 lastWorkingDay.txt
 #./be21b040.txt <year>
 #
 #
